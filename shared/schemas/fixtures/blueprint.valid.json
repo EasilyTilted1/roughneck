@@ -1,0 +1,70 @@
+{
+  "id": "bp-ml-foundations-v1",
+  "name": "ML Foundations — 4-atom seed",
+  "atoms": [
+    {
+      "id": "atom-intro",
+      "title": "Intro to Computational Thinking",
+      "description": "Core programming mindset, abstractions, decomposition, and basic algorithmic reasoning.",
+      "category": "Core",
+      "sourceLinks": [
+        {
+          "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+          "title": "MIT 6.0001 — Intro to CS",
+          "type": "doc",
+          "retrievedAt": "2026-01-15T00:00:00Z"
+        }
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "atom-calc-1",
+      "title": "Calculus I",
+      "description": "Limits, derivatives, integrals; the analytical backbone for continuous optimization.",
+      "category": "Core",
+      "sourceLinks": [
+        {
+          "url": "https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/",
+          "title": "MIT 18.01 — Single Variable Calculus",
+          "type": "doc",
+          "retrievedAt": "2026-01-15T00:00:00Z"
+        }
+      ],
+      "prerequisites": ["atom-intro"]
+    },
+    {
+      "id": "atom-linalg",
+      "title": "Linear Algebra",
+      "description": "Vector spaces, matrices, eigendecomposition — the representational language of ML.",
+      "category": "Core",
+      "sourceLinks": [
+        {
+          "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+          "title": "MIT 18.06 — Linear Algebra",
+          "type": "doc",
+          "retrievedAt": "2026-01-15T00:00:00Z"
+        }
+      ],
+      "prerequisites": ["atom-calc-1"]
+    },
+    {
+      "id": "atom-ml-foundations",
+      "title": "ML Foundations",
+      "description": "Supervised vs unsupervised learning, empirical risk minimization, bias-variance tradeoff.",
+      "category": "Core",
+      "sourceLinks": [
+        {
+          "url": "https://arxiv.org/abs/2104.12369",
+          "title": "Foundations of Machine Learning (survey)",
+          "type": "paper",
+          "retrievedAt": "2026-01-15T00:00:00Z"
+        }
+      ],
+      "prerequisites": ["atom-calc-1", "atom-linalg"]
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-01-15T00:00:00Z",
+    "version": "1.0.0"
+  }
+}

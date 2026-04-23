@@ -1,0 +1,26 @@
+{
+  "id": "bp-broken-v1",
+  "name": "Broken blueprint — dangling prereq",
+  "atoms": [
+    {
+      "id": "atom-a",
+      "title": "Intro",
+      "description": "Entry atom with no prerequisites.",
+      "category": "Core",
+      "sourceLinks": [],
+      "prerequisites": []
+    },
+    {
+      "id": "atom-b",
+      "title": "Advanced Topic",
+      "description": "Depends on an atom that does not exist in this blueprint.",
+      "category": "Core",
+      "sourceLinks": [],
+      "prerequisites": ["atom-does-not-exist"]
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-01-15T00:00:00Z",
+    "version": "1.0.0"
+  }
+}
